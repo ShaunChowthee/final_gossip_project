@@ -1,0 +1,6 @@
+<h1><%=@gossip.title%></h1>
+<p><%=@gossip.content%><p>
+<p>by <%=@gossip.author%></p>
+
+<%= link_to "Edit", edit_gossip_path(@gossip), class: "btn btn-primary" %>
+<%= button_to "Delete", gossip_path(@gossip), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>

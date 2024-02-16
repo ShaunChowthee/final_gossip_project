@@ -1,0 +1,5 @@
+<h1>Liste des gossips</h1>
+<%@all_gossips.each_with_index do |gossip, index|%>
+  <p><%= "#{index+1}/ " %><%= link_to "#{gossip.content}", gossip_path(gossip) %><%= " - " %><%= link_to "#{gossip.author}", user_path(gossip.user_id) %></p>
+<%end%>
+  

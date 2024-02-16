@@ -1,0 +1,6 @@
+<h1>From <%=@city.name%></h1>
+<ul>
+<%@gossip_list.each do |gossip|%>
+  <li><%="#{gossip.content} by #{gossip.author}"%></li>
+<%end%>
+</ul>
